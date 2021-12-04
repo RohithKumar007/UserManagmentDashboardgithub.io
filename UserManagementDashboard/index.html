@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="searchForm">
+        <input type="text"  placeholder="Search Project" onchange="searchTable(event)" autofocus>
+    </div>
+
+    <div id="addNewButton">
+        <button type="submit" onclick="showForm()">Add New Project</button>
+    </div>
+
+    <form onsubmit="addData(event)" id="addData">
+        <input type="text" placeholder="Enter project name" class="project-name" autofocus required>
+        <input type="date" class="project-date" required>
+        <input type="range" min="10" max="100" minlength="10" name="range" class="progress" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <table></table>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>

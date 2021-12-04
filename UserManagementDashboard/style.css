@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Zen+Kurenaido&display=swap');
+
+:root {
+  --border: 2px solid grey;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  padding: 50px;
+  background-color: whitesmoke;
+}
+
+/*Search Form*/
+
+
+#searchForm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchForm > input {
+  padding: 10px 30px;
+  margin-bottom: 50px;
+  border-radius: 2px;
+}
+
+
+table {
+  table-layout: auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th:nth-child(1) {
+    width: 20%;
+}
+
+thead th:nth-child(2) {
+  width: 10%;
+}
+
+thead th:nth-child(3) {
+  width: 5%;
+}
+
+thead th:nth-child(4) {
+  width: 10%;
+}
+
+thead {
+  text-transform: capitalize; 
+}
+  
+th, tr {
+  padding: 15px;
+}
+
+tr td {
+    color: rgb(71, 68, 68);
+    text-align: center;
+    padding: 20px 10px;
+    font-weight: 600;
+}
+
+tr td:nth-last-child(4) {
+  width: 12%;
+}
+
+tr td:nth-last-child(3) {
+  width: 15%;
+}
+
+tr {
+  border-top: var(--border);
+  border-bottom: var(--border);
+}
+
+tr td img{ 
+  box-sizing: border-box;
+  width: 25%; 
+  border-radius: 50%; 
+  height: 25%; 
+  cursor: pointer;
+}
+
+tr td:nth-last-child(1) button{
+  background: #bcd0dd; 
+  background-image: url("https://png.pngtree.com/png-vector/20190419/ourlarge/pngtree-vector-cross-icon-png-image_956622.jpg"); 
+  
+}
+
+tr td:nth-last-child(2) button{
+  background-image: url("https://cdn.pixabay.com/photo/2017/06/06/00/33/edit-icon-2375785_960_720.png"); 
+}
+
+tr td:nth-last-child(1) button, td:nth-last-child(2) button {
+  background-size: cover; 
+  background-position: center; 
+  display: inline-block; 
+  border: none; 
+  padding: 15px; 
+  width: 5%; 
+  border-radius: 42%; 
+  height: 5%; 
+  transition: all 0.5s; 
+  cursor: pointer;
+}
+
+tr td:nth-last-child(1) ,tr td:nth-last-child(2) {
+  width: 2.5%;
+}
+
+
+/*Progress Bar*/
+
+
+tr td:nth-child(5) > div{
+  padding: 2px;
+  width: 90%;
+  border: 3px solid #300b1a7a;
+  height: 10px;
+}
+
+tr td:nth-child(5) > div > div{
+  height: 100%;
+  width: 0;
+  background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  transition: 0.3s;
+}
+
+/*Add to table form*/
+
+#addData {
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#addData input, #addNewButton button, #addData button{
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 2px;
+}
+
+#addNewButton {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#addNewButton button , #addData button{
+  margin-top: 6px;
+  border-radius: 25px;
+  background:#DD4A48;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
